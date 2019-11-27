@@ -1,0 +1,27 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: {{  .Values.fullname }}
+  namespace: node-app-ksh
+  labels:
+     app: appod
+spec:
+  replicas: {{ .Values.replicaCount }}
+  #strategy:
+  #    type: "RollingUpdate"
+  #    rollingUpdate:
+  #       maxUnavailable: 2
+  template:
+  selector:
+    matchLabels:
+      app: {{ .Values.label.app }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.label.app }}
+    spec:
+      containers:
+      - name: {{ .Values.image.name }}
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        ports:
+        - containerPort: 80
