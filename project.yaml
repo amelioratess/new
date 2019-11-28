@@ -1,0 +1,9 @@
+
+project: "amelioratess/new"
+repository: "github.com/amelioratess/new"
+cloneURL: "https://github.com/amelioratess/new.git"
+
+github:
+   token: "538ac87d1032f6eded58a4205226de19a4aa5ac3"
+
+sharedSecret: "1029384756"
