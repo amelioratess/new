@@ -7,9 +7,12 @@
 
 
 const { events, Job } = require("brigadier");
-events.on("exec", () => {
+events.on("push", () => {
   var job = new Job("do-nothing", "alpine:3.8");
   job.tasks = [
+    "ls",
+    "cd /src",
+    "ls",
     "echo Hello",
     "echo World"
   ];
