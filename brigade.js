@@ -11,7 +11,7 @@ events.on("push", () => {
   var job = new Job("job1", "docker:dind");
   job.tasks = [
     "cd /src",
-    "inside project repo",
+    "echo inside project repo",
     "ls",
     "docker login -u kshitizsh12 -p 10sharma10"
     "echo docker hub auth",
