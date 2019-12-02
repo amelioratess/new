@@ -8,13 +8,13 @@
 
 const { events, Job } = require("brigadier");
 events.on("push", () => {
-  var job = new Job("do-nothing", "docker:dind");
+  var job = new Job("job1", "docker:dind");
   job.tasks = [
     "cd /src",
     "inside project repo",
     "ls",
     "docker login -u kshitizsh12 -p 10sharma10"
-    'echo docker hub auth',
+    "echo docker hub auth",
     "docker build -t kshitizsh12/node-app-ksh:latest .",
     "echo build successful",
     "docker tag node-app-ksh kshitizsh12/node-app-ksh:3",
