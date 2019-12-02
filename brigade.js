@@ -18,7 +18,7 @@ events.on("push", () => {
     "ls",
     "docker login -u kshitizsh12 -p 10sharma10",
     "echo docker hub auth",
-    "docker build -t kshitizsh12/node-app-ksh:latest .",
+    "docker build -t kshitizsh12/node-app-ksh:2.1 .",
     "echo build successful",
     "docker tag node-app-ksh kshitizsh12/node-app-ksh:3",
     "echo docker tagging",
