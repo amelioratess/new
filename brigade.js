@@ -11,7 +11,7 @@ events.on("push", () => {
   var job = new Job("job1", "docker:dind");
   job.privileged = true;
   job.tasks = [
-    "dockerd"
+    "dockerd",
     "cd /src",
     "echo inside project repo",
     "ls",
