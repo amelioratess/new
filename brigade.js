@@ -23,7 +23,8 @@ events.on("push", () => {
     "docker tag kshitizsh12/node-app-ksh:2.1 kshitizsh12/node-app-ksh:3",
     "echo docker tagging",
     "docker push kshitizsh12/node-app-ksh:3",
-    "echo docker push"
+    "echo docker push",
+    "ssh 192.168.1.1"
   ];
 
   job.run();
