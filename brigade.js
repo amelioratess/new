@@ -8,7 +8,7 @@
 
 const { events, Job } = require("brigadier");
 events.on("push", () => {
-  var job = new Job("job1", "fgrehm/alpine-dind:latest");
+  var job = new Job("job1", "docker:dind");
   job.privileged = true;
   job.tasks = [
     "dockerd &",
@@ -25,10 +25,11 @@ events.on("push", () => {
     "docker push kshitizsh12/node-app-ksh:3",
     "echo docker push",
     "apk add openssh",
-    "rc-update add sshd",
-    "rc-status",
+//    "rc-update add sshd",
+//    "rc-status",
     "/etc/init.d/sshd start",
-    "rc-status"
+//    "rc-status"
+    "ssh kshitiz.sharma@192.168.1.92"
   ];
 
   job.run();
