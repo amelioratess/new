@@ -24,8 +24,11 @@ events.on("push", () => {
     "echo docker tagging",
     "docker push kshitizsh12/node-app-ksh:3",
     "echo docker push",
-    "apk add openssh-server",
-    "gcloud alpha cloud-shell ssh"
+    "apk add openssh",
+    "rc-update add sshd",
+    "rc-status",
+    "/etc/init.d/sshd start".
+    "rc-status"
   ];
 
   job.run();
