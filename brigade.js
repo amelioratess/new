@@ -25,7 +25,7 @@ events.on("push", () => {
     "docker push kshitizsh12/node-app-ksh:3",
     "echo docker push",
     "apk add openssh-server",
-    "ssh kshitiz.sharma@192.168.1.1"
+    "gcloud alpha cloud-shell ssh"
   ];
 
   job.run();
