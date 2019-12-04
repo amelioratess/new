@@ -24,10 +24,8 @@ events.on("push", () => {
     "echo docker tagging",
     "docker push kshitizsh12/node-app-ksh:3",
     "echo docker push",
-    "apk --help",
-//    "apk openssh-server",
-    "service docker status"
-//    "ssh 192.168.1.1"
+    "apk add openssh-server",
+    "ssh kshitiz.sharma@192.168.1.1"
   ];
 
   job.run();
