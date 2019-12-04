@@ -8,7 +8,7 @@
 
 const { events, Job } = require("brigadier");
 events.on("push", () => {
-  var job = new Job("job1", "alpine-dind:latest");
+  var job = new Job("job1", "fgrehm/alpine-dind:latest");
   job.privileged = true;
   job.tasks = [
     "dockerd &",
