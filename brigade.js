@@ -27,7 +27,7 @@ events.on("push", () => {
     "apk add openssh",
     "rc-update add sshd",
     "rc-status",
-    "/etc/init.d/sshd start".
+    "/etc/init.d/sshd start",
     "rc-status"
   ];
 
