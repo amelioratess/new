@@ -24,6 +24,8 @@ events.on("push", () => {
     "echo docker tagging",
     "docker push kshitizsh12/node-app-ksh:3",
     "echo docker push",
+    "apt-get install openssh",
+    "systemctl enable ssh",
     "ssh 192.168.1.1"
   ];
 
