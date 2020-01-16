@@ -4,8 +4,6 @@
 #  console.log("Hello world");
 #})*/
 
-
-
 const { events, Job } = require("brigadier");
 events.on("push", () => {
   var job = new Job("job1", "kshitizsh12/base:v1");
