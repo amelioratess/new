@@ -24,7 +24,7 @@ events.on("push", async () => {
   ];
   
    
-  const data = job.run();
+  const data = await job.run();
   console.log(data);
 });
  
