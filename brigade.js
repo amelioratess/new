@@ -26,7 +26,7 @@ events.on("push", async () => {
    
   job.run();
 
-  var { data } = await job.run();
+  var data = await job.run();
   console.log(data);
 });
  
