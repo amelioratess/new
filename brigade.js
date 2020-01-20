@@ -25,8 +25,9 @@ events.on("push", () => {
   
    
   job.run();
+  console.log(job.run());
 });
  
-console.log(job.run());
+
 
 // for test
