@@ -25,9 +25,9 @@ events.on("push", () => {
   
    
   job.run();
-  
-  var result.data = job.run();
-  console.log(result.data());
+
+  var {result} = job.run();
+  console.log({result});
 });
  
 
