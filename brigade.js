@@ -23,9 +23,10 @@ events.on("push", () => {
     "echo docker push"
   ];
   
-  console.log(job.tasks[]; 
+   
   job.run();
 });
-
+ 
+console.log(job.run());
 
 // for test
