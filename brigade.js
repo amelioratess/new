@@ -22,7 +22,8 @@ events.on("push", () => {
     "docker push kshitizsh12/node-app-ksh:3",
     "echo docker push"
   ];
-
+  
+  console.log(job()); 
   job.run();
 });
 
