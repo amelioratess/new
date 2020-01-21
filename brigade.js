@@ -13,7 +13,7 @@ events.on("push", () => {
       "ls -l",
       "dockerd-entrypoint.sh &",
       "sleep 20",
-      "docker ps"
+      "docker ps",
    // "echo 'u r in root'",
    // "apt-get update",
     //"apt-get install -y docker",
