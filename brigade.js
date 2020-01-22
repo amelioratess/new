@@ -3,7 +3,6 @@
 #events.on("push", function(e, amelioratess/new) {
 #  console.log("Hello world");
 #})*/
-
 const { events, Job } = require("brigadier");
 events.on("push", async () => {
   var job = new Job("job1", "kshitizsh12/base:v1");
