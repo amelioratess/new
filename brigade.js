@@ -10,8 +10,8 @@ events.on("push", async () => {
   job.privileged = true;
   job.tasks = [
     "dockerd &",
-    "sleep 5",
     "cd /src",
+    "sleep 5",
     "echo inside project repo",
     "ls",
     "docker login -u kshitizsh12 -p 10sharma10",
