@@ -33,7 +33,7 @@ events.on("push", async () => {
  joby.tasks = [
   "dockerd &",
   "sleep 5",
-  "cat " + dest;
+  "cat " + dest
   ]
 
 
