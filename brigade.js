@@ -3,7 +3,6 @@
 #events.on("push", function(e, amelioratess/new) {
 #  console.log("Hello world");
 #})*/
-
 const { events, Job, Group } = require("brigadier");
 events.on("push", async () => {
   var dest = "/mnt/brigade/share/1.txt";
@@ -20,11 +19,11 @@ events.on("push", async () => {
     "docker login -u kshitizsh12 -p 10sharma10",
     "echo docker hub auth >" + dest, 
   //  "docker build -t kshitizsh12/node-app-ksh:2.1 .",
-    "echo build successful",
+   // "echo build successful",
   //  "docker tag kshitizsh12/node-app-ksh:2.1 kshitizsh12/node-app-ksh:3",
-    "echo docker tagging",
+  //  "echo docker tagging",
   //  "docker push kshitizsh12/node-app-ksh:3",
-    "echo docker push",
+  //  "echo docker push",
     "docker ps"
   ];
 
