@@ -34,7 +34,7 @@ events.on("push", async () => {
   "dockerd &",
   "sleep 5",
   "cat " + dest
-  ]
+  ];
 
 
 //  const data = await job.run();
