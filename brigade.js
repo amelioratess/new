@@ -38,11 +38,12 @@ events.on("push", async () => {
   ];
 
 
-//  const data = await job.run();
-//  console.log(data);
+
+ const data = await Group.runEach([job, joby]);
+ console.log(data);
 // above two line for getting logs in brigade worker
 
-Group.runEach([job, joby])
+// Group.runEach([job, joby])
 
 });
  
