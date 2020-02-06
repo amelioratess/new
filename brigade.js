@@ -28,6 +28,7 @@ events.on("push", async () => {
     "docker ps"
   ];
 
+
  var joby = new Job("job2", "docker:dind");
  joby.storage.enabled = true;
  job.privileged = true;
